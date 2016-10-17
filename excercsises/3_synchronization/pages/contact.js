@@ -1,19 +1,17 @@
-var Contact = function() {
+var Contact = function () {
+  this.menuItems = element.all(by.css('ul.nav > li > a'))
 
-  this.menuItems = element.all(by.css('ul.nav > li > a')); 
+  this.get = function () {
+    browser.driver.get('http://localhost:8888/contact.html')
+  }
 
-  this.get = function() {
-    browser.driver.get('http://localhost:8888/contact.html');
-  };
+  this.getTitle = function () {
+    return browser.driver.getTitle()
+  }
 
-  this.getTitle = function() {
-    return browser.driver.getTitle();
-  };
+  this.clickMenuItemAt = function (idx) {
+    this.menuItems.get(idx).click()
+  }
+}
 
-  this.clickMenuItemAt = function(idx) {
-    this.menuItems.get(idx).click();
-  };
-
-};
-
-module.exports = new Contact();
+module.exports = new Contact()

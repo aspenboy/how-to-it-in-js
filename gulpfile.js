@@ -10,7 +10,7 @@
         jshint = require('gulp-jshint'),
         jscs = require('gulp-jscs'),
         runSequence = require('run-sequence'),
-		    connect = require('gulp-connect');
+        connect = require('gulp-connect');
     /**
      * Runs Protractor tests with given suite name.
      * @param suiteName
@@ -23,7 +23,7 @@
                 configFile: confName,
                 args: ['--suite', suiteName]
             }))
-            .on('end', function() {
+            .on('end', function () {
                 console.log('Test completed.');
             })
             .on('error', function (e) {
@@ -31,12 +31,12 @@
             });
     }
 
-	gulp.task('webserver', function() {
-		connect.server({
-			root: ['.', 'test-app'],
-      port: 8888
-		});
-	});
+    gulp.task('webserver', function () {
+        connect.server({
+            root: ['.', 'test-app'],
+            port: 8888
+        });
+    });
 
 
     /**
@@ -48,12 +48,12 @@
 
     });
 
-	 /**
-     * Runs the 'minimal' specification.
-     */
+    /**
+    * Runs the 'minimal' specification.
+    */
     gulp.task('test-minimal', function () {
 
-      return runSpec('conf/minimal.js', '');
+        return runSpec('conf/minimal.js', '');
 
     });
 
@@ -62,7 +62,7 @@
       */
     gulp.task('test-with-reporter', function () {
 
-      return runSpec('conf/with_reporter.js', '');
+        return runSpec('conf/with_reporter.js', '');
 
     });
 
@@ -81,7 +81,7 @@
      */
     gulp.task('test-smoke', function () {
 
-      return runSpec('conf/smoke.js', '');
+        return runSpec('conf/smoke.js', '');
 
     });
 
@@ -113,7 +113,7 @@
 
         return gulp.src(['./src/**/*.js', './tools/**/*.js'])
             .pipe(jscs())
-            .on('error', function () {})
+            .on('error', function () { })
             .pipe(jscsStylish());
 
     });
@@ -123,7 +123,7 @@
      */
     gulp.task('static-analysis', function (callback) {
 
-        callback = callback || function () {};
+        callback = callback || function () { };
 
         runSequence('jshint', 'jscs', callback);
 

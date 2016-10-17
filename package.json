@@ -33,5 +33,30 @@
     "q": "^1.4.1",
     "run-sequence": "^1.1.2",
     "selenium-server-standalone-jar": "^2.53.0"
+  },
+  "standard": {
+    "globals": [
+      "browser",
+      "describe",
+      "it",
+      "beforeEach",
+      "afterEach",
+      "expect",
+      "element",
+      "by",
+      "all"
+    ]
+  },
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "node": true,
+      "protractor": true,
+      "jasmine": true
+    },
+    "rules": {
+      "no-tabs": false,
+      "no-undef": false
+    }
   }
 }
