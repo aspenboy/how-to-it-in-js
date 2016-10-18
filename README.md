@@ -38,9 +38,6 @@ Agile & Automation Days.
 
 **Uwaga:** W przypadku problemów w środowisku Windows zapoznaj się z postem [Nodejs cannot find installed module on Windows](http://stackoverflow.com/questions/9587665/nodejs-cannot-find-installed-module-on-windows/). Jeśli ciągle będziesz miał problem zgłoś go w zakładce `Issues`. Postaram się pomóc.
 
-## Prezentacja
-[Jak to zrobić w JavaScript](http://www.slideshare.net/jacekokrojek/aadays-2015-jak-to-zrobic-w-javascript)
-
 ## Przydatne materiały
 * Jeśli nie programowałeś do tej pory ten kurs powinien pomóc [Learn JavaScript](https://www.codecademy.com/tracks/javascript)
 * [Mozilla JavaScript Guide - Re-introduction to JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript)
