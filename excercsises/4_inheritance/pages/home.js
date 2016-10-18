@@ -1,36 +1,34 @@
-var Page = require('./page');
+var Page = require('./page')
 
-var HomePage = function() {
-
+var HomePage = function () {
   /**
    * Call super constructor.
    */
-  Page.call(this);
+  Page.call(this)
 
   /**
    * Self reference.
    */
-  var self = this;
+  var self = this
 
-  var HomePage = function() {
+  var HomePage = function () {
+    this.menuItems = element.all(by.css('ul.nav > li > a'))
 
-  this.menuItems = element.all(by.css('ul.nav > li > a')); 
+    this.get = function () {
+      this.load('/')
+    }
 
-  this.get = function() {
-	this.load('/');    
-  };
+    this.clickMenuAtIdx = function (idx) {
+      this.menuItems.get(idx).click()
+    }
 
-  this.clickMenuAtIdx = function(idx) {
-    this.menuItems.get(idx).click();
-  };
+    this.getMenuTextAtIdx = function (idx) {
+      return this.menuItems.get(idx)
+    }
+  }
+}
 
-  this.getMenuTextAtIdx = function(idx) {
-    return this.menuItems.get(idx);
-  };
-  
-};
+HomePage.prototype = Object.create(Page.prototype)
+HomePage.prototype.constructor = HomePage
 
-HomePage.prototype = Object.create(Page.prototype);
-HomePage.prototype.constructor = HomePage;
-
-module.exports = new HomePage();
+module.exports = new HomePage()

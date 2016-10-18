@@ -18,19 +18,15 @@ exports.config = {
       displayStacktrace: true
     }))
 
-    /*
-    var jasmineReporters = require('jasmine-reporters')
-    jasmine.getEnv().addReporter(new jasmineReporters.JUnitXmlReporter({
-       consolidateAll: true,
-       savePath: 'results/unit',
-       filePrefix: 'xmloutput'
-    }))
-    */
+    // var jasmineReporters = require('jasmine-reporters')
+    // jasmine.getEnv().addReporter(new jasmineReporters.JUnitXmlReporter({
+    //   consolidateAll: true,
+    //   savePath: 'results/unit',
+    //   filePrefix: 'xmloutput'
+    // }))
 
-  /*
-  var Jasmine2HtmlReporter = require('protractor-jasmine2-html-reporter')
-  jasmine.getEnv().addReporter( new Jasmine2HtmlReporter({}))
-  */
+    // var Jasmine2HtmlReporter = require('protractor-jasmine2-html-reporter')
+    // jasmine.getEnv().addReporter(new Jasmine2HtmlReporter({}))
   },
 
   jasmineNodeOpts: {

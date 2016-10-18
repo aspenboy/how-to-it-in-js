@@ -44,7 +44,9 @@
       "expect",
       "element",
       "by",
-      "all"
+      "all",
+      "xit",
+      "fit"
     ]
   },
   "eslintConfig": {

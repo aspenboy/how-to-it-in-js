@@ -15,47 +15,47 @@ describe('Protractor workshop app', function () {
   })
 
   /**
+   * EXERCISE 2
+   *
    * Check http://angular.github.io/protractor/#/api?view=ElementFinder
    * to see how to select element for verification
    */
-  it('should have "Example Headline 1" carousel item after entering site', function () {
-    // var carouselHeader = element(by.css('div.carousel-caption h1'))
-    var carouselHeader = element(by.xpath("//div[@class='carousel-caption']/h1"))
-    var expetedText = 'Example Headline 1'
-    expect(carouselHeader.getText()).toEqual(expetedText)
-  })
-
-  it('should have correct feature header', function () {
-    var featureHeader = element(by.css('div.cnt-title h1'))
-    var expetedText = 'At vero eos et accusamus et iusto odio dignissimos'
-    expect(featureHeader.getText()).toEqual(expetedText)
+  xit('should have "Example Headline 1" carousel item after entering site', function () {
+    // Enter your code here
   })
 
   /**
+   * EXERCISE 2
+   */
+  xit('should have correct feature header', function () {
+    // Enter your code here
+  })
+
+  /**
+   * EXERCISE 3
+   *
    * Check http://angular.github.io/protractor/#/api?view=ElementArrayFinder
    * to see how get function can be used
    */
-  it('should have menu items with links to "Home", "About", "Services", "Blog", "Contact",  pages', function () {
-    var menuItems = element.all(by.css('ul.nav > li > a'))
+  xit('should have menu items with links to "Home", "About", "Services", "Blog", "Contact",  pages', function () {
+    // Enter your code here
   })
 
   /**
+   * EXERCISE 3
+   *
    * Check http://angular.github.io/protractor/#/api?view=ElementArrayFinder
    * to see how map function can be used to verify content of multiple elements
    */
-  it('should have Feature A, Feature B and Feature C sections', function () {
-    var features = element.all(by.xpath('//h2'))
-    var featureHeaders = features.map(function (elm, index) {
-      return elm.getText()
-    })
-    expect(featureHeaders).toEqual(['Feature A', 'Feature B', 'Feature C'])
+  xit('should have Feature A, Feature B and Feature C sections', function () {
+    // Enter your code here
   })
 
   /**
    * Check http://angular.github.io/protractor/#/api?view=ElementArrayFinder
    * to see how fileter function can be used select elements based on condition
    */
-  it('should route to "Blog" pages after selecting link', function () {
-    var menuItems = element.all(by.css('ul.nav > li > a'))
+  xit('should route to "Blog" pages after selecting link', function () {
+    // Enter your code here
   })
 })

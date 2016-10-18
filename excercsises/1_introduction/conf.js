@@ -10,12 +10,12 @@ exports.config = {
     'browserName': 'chrome'
   },
 
-  // / MINIMAL CONFIGURATION END /////////////////////////////////////////////////////
-
   onPrepare: function () {
     browser.manage().window().setSize(1680, 1050)
     browser.ignoreSynchronization = true
 
+    // EXERCISE 2
+    //
     // Full list of available options:
     // https://github.com/bcaudan/jasmine-spec-reporter/blob/master/README.md
     // var SpecReporter = require('jasmine-spec-reporter')
