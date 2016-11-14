@@ -5,7 +5,8 @@ describe('Protractor Workshop app', function () {
     contactPage.get()
   })
 
-  xit('should have "Get in touch" and "Address" sections on Contact Us page', function () {
-    // Enter your code here
+  it('should have "Get in touch" and "Address" sections on Contact Us page', function () {
+    expect(contactPage.getHeaderText(0)).toEqual('Get in Touch')
+    expect(contactPage.getHeaderText(1)).toEqual('Address')
   })
 })

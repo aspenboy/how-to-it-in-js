@@ -10,6 +10,6 @@ describe('Protractor Workshop app', function () {
   })
 
   it('should have Contact menu item with link to Contact us page', function () {
-    // Enter your code here
+    //
   })
 })

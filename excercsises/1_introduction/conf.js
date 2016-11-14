@@ -18,10 +18,10 @@ exports.config = {
     //
     // Full list of available options:
     // https://github.com/bcaudan/jasmine-spec-reporter/blob/master/README.md
-    // var SpecReporter = require('jasmine-spec-reporter')
-    // jasmine.getEnv().addReporter(new SpecReporter({
-    //   displayStacktrace: true
-    // }))
+    var SpecReporter = require('jasmine-spec-reporter')
+    jasmine.getEnv().addReporter(new SpecReporter({
+      displayStacktrace: true
+    }))
 
     // var jasmineReporters = require('jasmine-reporters')
     // jasmine.getEnv().addReporter(new jasmineReporters.JUnitXmlReporter({
@@ -30,8 +30,8 @@ exports.config = {
     //   filePrefix: 'xmloutput'
     // }))
 
-    // var Jasmine2HtmlReporter = require('protractor-jasmine2-html-reporter')
-    // jasmine.getEnv().addReporter(new Jasmine2HtmlReporter({}))
+    var Jasmine2HtmlReporter = require('protractor-jasmine2-html-reporter')
+    jasmine.getEnv().addReporter(new Jasmine2HtmlReporter({}))
   },
 
   jasmineNodeOpts: {

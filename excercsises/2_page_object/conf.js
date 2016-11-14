@@ -3,6 +3,11 @@ exports.config = {
 
   specs: ['*.spec.js'],
 
+  suites: {
+    homepage: './home.spec.js',
+    contactUs: './contact.spec.js'
+  },
+
   capabilities: {
     'browserName': 'chrome'
   },

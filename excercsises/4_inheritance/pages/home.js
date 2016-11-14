@@ -12,19 +12,26 @@ var HomePage = function () {
   var self = this
 
   var HomePage = function () {
+    var Menu = require('./menu')
+    var menu = new Menu(element.all(by.css('ul.nav > li > a')))
+
     this.menuItems = element.all(by.css('ul.nav > li > a'))
 
     this.get = function () {
       this.load('/')
     }
 
-    this.clickMenuAtIdx = function (idx) {
-      this.menuItems.get(idx).click()
-    }
+    this.clickMenuAtIdx = menu.clickMenuAtIdx(idx)
 
-    this.getMenuTextAtIdx = function (idx) {
-      return this.menuItems.get(idx)
-    }
+    this.getMenuTextAtIdx = menu.getMenuTextAtIdx(idx)
+
+    // this.clickMenuAtIdx = function (idx) {
+    //   this.menuItems.get(idx).click()
+    // }
+
+    // this.getMenuTextAtIdx = function (idx) {
+    //   return this.menuItems.get(idx)
+    // }
   }
 }
 

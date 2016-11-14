@@ -10,8 +10,15 @@ describe('Protractor Workshop app', function () {
   })
 
   it('should display text "Your message has been sent." when user sends message  ', function () {
-    // Enter your code here
+    element(by.id('name')).clear().sendKeys('Name')
+    element(by.id('email')).clear().sendKeys('email@com')
+    element(by.id('content')).clear().sendKeys('Tekst wiadomości')
+    element(by.buttonText('Submit')).click()
+    var message = element(by.css('span.message h3'))
 
-    expect(element(by.css('span.message h3')).getText()).toEqual('Your message has been sent.')
+    var ec = protractor.ExpectedConditions
+    browser.wait(ec.textToBePresentInElement(message,
+    'Your message has been sent.'), 5000)
+    expect(message.getText()).toEqual('Your message has been sent.')
   })
 })

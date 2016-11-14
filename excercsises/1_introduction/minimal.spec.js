@@ -12,6 +12,18 @@ describe('Protractor workshop app', function () {
     var footerCopyright = element(by.xpath('//footer/div/div'))
     var expectedHTML = 'Copyright © 2013 Shapebootstrap | All Rights Reserved'
     expect(footerCopyright.getText()).toContain(expectedHTML)
+
+    // TODO
+    // var self = this
+    // var text = ''
+
+    // footerCopyright.getText().then(function (txt) {
+    //   self.text = txt
+    // }, function (err) {
+    //   console.log(err)
+    // }).then(function () {
+    //   console.log('TEXT: ', self.text)
+    // })
   })
 
   /**
@@ -20,8 +32,9 @@ describe('Protractor workshop app', function () {
    * Check http://angular.github.io/protractor/#/api?view=ElementFinder
    * to see how to select element for verification
    */
-  xit('should have "Example Headline 1" carousel item after entering site', function () {
-    // Enter your code here
+  fit('should have "Example Headline 1" carousel item after entering site', function () {
+    var headline = $('.item.active').$('.carousel-caption h1')
+    expect(headline.getText()).toEqual('Example Headline 1')
   })
 
   /**
