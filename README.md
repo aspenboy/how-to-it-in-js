@@ -28,12 +28,18 @@ Basics of end-to-end testing with protractor and javascript.
 
   * Use gulp to start the application
   
-    `gulp webserver`
+    ```
+    gulp webserver
+    ```
+
     Head to `localhost:8888` and check if the webpage loads correctly. There might be some errors from the server, but we can ignore them for now.
 
   * Open another terminal window and try running the tests
 
-    `protractor tests\config.js`
+    ```
+    protractor tests\config.js
+    ```
+
     Seeing a lot of failed tests? Good, we're going to fix them during the workshop :)
     
 3. Use your favorite text editor, e.g. [Atom](https://atom.io/), [Sublime](https://www.sublimetext.com/) or [VS Code](https://code.visualstudio.com/)
