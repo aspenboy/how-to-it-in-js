@@ -52,7 +52,7 @@ Basics of end-to-end testing with protractor and javascript.
     
 3. Use your favorite text editor, e.g. [Atom](https://atom.io/), [Sublime](https://www.sublimetext.com/) or [VS Code](https://code.visualstudio.com/)
 
->**Warning:** if you experience problems on Windows with NodeJS being unable to locate modules, head over [here](http://stackoverflow.com/questions/9587665/nodejs-cannot-find-installed-module-on-windows/). Jeśli ciągle będziesz miał problem zgłoś go w zakładce `Issues`. Postaram się pomóc.
+>**Warning:** if you experience problems on Windows with NodeJS being unable to locate modules, head over [here](http://stackoverflow.com/questions/9587665/nodejs-cannot-find-installed-module-on-windows/).
 
 ## Useful links
 * Never used JavaScript? Grab the basics at [codecademy](https://www.codecademy.com/tracks/javascript)
