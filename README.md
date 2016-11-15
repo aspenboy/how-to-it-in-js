@@ -10,19 +10,27 @@ Basics of end-to-end testing with protractor and javascript.
 
   * Inside the repository folder (where `package.json` file is located) use npm to install all required dependencies:
 
-    `npm install`
+    ```
+    npm install
+    ```
     
   * Install protractor (use `-g` switch to install it globally)
 
-    `npm install -g protractor`
+    ```
+    npm install -g protractor
+    ```
     
   * Update selenium webdriver
 
-    `webdriver-manager update`
+    ```
+    webdriver-manager update
+    ```
 
   * Install gulp task runner 
 
-    `npm install -g gulp`
+    ```
+    npm install -g gulp
+    ```
 
 2. Check if everything was set up correctly
 
@@ -46,7 +54,7 @@ Basics of end-to-end testing with protractor and javascript.
 
 >**Warning:** if you experience problems on Windows with NodeJS being unable to locate modules, head over [here](http://stackoverflow.com/questions/9587665/nodejs-cannot-find-installed-module-on-windows/). Jeśli ciągle będziesz miał problem zgłoś go w zakładce `Issues`. Postaram się pomóc.
 
-## Przydatne materiały
+## Useful links
 * Never used JavaScript? Grab the basics at [codecademy](https://www.codecademy.com/tracks/javascript)
 * [Mozilla JavaScript Guide - Re-introduction to JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript)
 * [Mozilla JavaScript Guide - Working with Objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects)
